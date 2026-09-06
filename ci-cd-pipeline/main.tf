@@ -24,3 +24,5 @@ provider "aws" {
   }
 }
 
+# this is a random string that will be used to create unique names for resources
+
