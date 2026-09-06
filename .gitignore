@@ -4,7 +4,15 @@ docs/
 # Terraform files
 *.tfstate
 *.tfstate.*
+
+# Ignore all .tfvars by default...
 *.tfvars
+
+# ...EXCEPT for your environment configuration files
+!dev.tfvars
+!test.tfvars
+!prod.tfvars
+
 .terraform/
 .terraform.lock.hcl
 crash.log
@@ -29,6 +37,5 @@ override.tf.json
 ehthumbs.db
 Thumbs.db
 lessons/day15/vpc-peering-demo-east.pem
-
 
 *.pem
